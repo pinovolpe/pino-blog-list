@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pino Blog List 0.2.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: pino-blog-list\n"
+
+msgid "Immagine non disponibile"
+msgstr ""
+
+msgid "Pagina non valida."
+msgstr ""
+
+msgid "Nessun articolo disponibile."
+msgstr ""
+
+msgid "Articoli del blog"
+msgstr ""
+
+msgid "Carica altri articoli"
+msgstr ""
+
+msgid "Attiva JavaScript per caricare altri articoli oppure "
+msgstr ""
+
+msgid "consulta il feed del blog"
+msgstr ""
+
+msgid "Caricamento…"
+msgstr ""
+
+msgid "%d articoli aggiunti."
+msgstr ""
+
+msgid "Hai raggiunto la fine del blog."
+msgstr ""
+
+msgid "Caricamento non riuscito. Premi nuovamente il pulsante per riprovare."
+msgstr ""

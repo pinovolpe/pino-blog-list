@@ -1,47 +1,45 @@
 # Pino Blog List
 
-Shortcode WordPress `[pino_blog]` che mostra gli articoli del blog con pulsante "Carica altri articoli".
+A WordPress plugin that displays published blog posts through the `[pino_blog]` shortcode, with a progressive **Load more** button.
 
-## Uso
+## Usage
 
-    [pino_blog]
-    [pino_blog per_page="10" category="slug-categoria"]
+```text
+[pino_blog]
+[pino_blog per_page="10" category="travel"]
+```
 
-## Installazione
+- `per_page`: posts per page, from 1 to 50 (default: 20).
+- `category`: optional category slug.
 
-1. Scarica `pino-blog-list.zip` dall'[ultima release](https://github.com/pinovolpe/pino-blog-list/releases/latest) (non "Source code").
-2. In WordPress: Plugin → Aggiungi nuovo → Carica plugin.
-3. Attiva il plugin e inserisci `[pino_blog]` in una pagina.
+## Features
 
-## Demo
+- Responsive post cards with featured images, dates, and excerpts.
+- Progressive loading through the WordPress AJAX endpoint.
+- Keyboard-accessible controls and screen-reader status messages.
+- Public published posts only; password-protected posts are excluded.
+- Feed link as a fallback when JavaScript is disabled.
+- Translatable PHP and JavaScript interface strings.
 
-Lo shortcode è in uso su [pinovolpe.com/blog](https://www.pinovolpe.com/blog/).
+## Installation
 
-| Attributo | Predefinito | Descrizione |
-|---|---|---|
-| per_page | 20 | Articoli per pagina (1-50) |
-| category | vuoto | Slug della categoria |
+1. Download `pino-blog-list.zip` from the [latest GitHub release](https://github.com/pinovolpe/pino-blog-list/releases/latest), not the automatically generated **Source code** archive.
+2. In WordPress, open **Plugins → Add New Plugin → Upload Plugin**.
+3. Upload the ZIP and activate the plugin.
+4. Add `[pino_blog]` to a page or post.
 
-## Requisiti
-WordPress 6.0+ · PHP 7.4+
+## Requirements
 
-## Accessibilità
-Navigazione da tastiera con focus visibile, annunci per lettori di schermo,
-alternativa senza JavaScript tramite link al feed.
+- WordPress 6.0 or later.
+- PHP 7.4 or later.
+- Tested with WordPress 7.1.4.
 
-## Sicurezza
-Endpoint pubblico in sola lettura, solo articoli pubblici e senza password,
-parametri validati ed escaping dell'output.
+## Development
 
-## Note sullo sviluppo
-Sviluppato con il supporto di strumenti di AI generativa; il codice è stato
-letto, verificato e provato in staging.
+The plugin uses the `pino-blog-list` text domain. PHP strings use WordPress translation functions; JavaScript strings use `wp.i18n` and the `wp-i18n` script dependency.
 
-## Prossimi passi
+Releases are distributed as installable ZIP packages through the project's GitHub repository. The release asset is named `pino-blog-list.zip`.
 
-- Spostare CSS e JavaScript in file separati
-- Rendere i testi traducibili con `__()`
-- Valutare l'API REST al posto di `admin-ajax.php`
+## License
 
-## Licenza
-GPL-2.0-or-later
+Pino Blog List is licensed under GPL-2.0-or-later.

@@ -1,0 +1,21 @@
+.pvb-blog{--pvb-accent:currentColor;--pvb-divider:rgba(127,127,127,.35);width:100%}
+.pvb-blog,.pvb-blog *{box-sizing:border-box}
+.pvb-blog .pvb-card{display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;align-items:start;margin:0;padding:30px 0;border:0;border-bottom:1px solid var(--pvb-divider);background:transparent;box-shadow:none}
+.pvb-blog .pvb-card:first-child{padding-top:0}
+.pvb-blog .pvb-image{display:block;width:100%;aspect-ratio:1;overflow:hidden;border-radius:6px;background:rgba(127,127,127,.08)}
+.pvb-blog .pvb-image img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;margin:0;border-radius:0}
+.pvb-blog .pvb-placeholder{display:flex;align-items:center;justify-content:center;height:100%;padding:20px;text-align:center;font-size:.875rem}
+.pvb-blog .pvb-title{margin:0 0 10px;padding:0;font-size:clamp(1.3rem,2.3vw,1.75rem);line-height:1.25;overflow-wrap:anywhere}
+.pvb-blog .pvb-title a{color:inherit;text-decoration:none}
+.pvb-blog .pvb-title a:hover{text-decoration:underline;text-decoration-color:var(--pvb-accent);text-underline-offset:4px}
+.pvb-blog .pvb-date{display:block;font-size:.875rem;line-height:1.5;margin-bottom:12px;opacity:.8}
+.pvb-blog .pvb-excerpt{margin:0;line-height:1.65;overflow-wrap:anywhere}
+.pvb-blog .pvb-actions{text-align:center;padding-top:30px}
+.pvb-blog .pvb-more{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border:1px solid currentColor;border-radius:4px;background:transparent;color:inherit;font:inherit;line-height:1.3;cursor:pointer;white-space:normal}
+.pvb-blog .pvb-more:hover{border-color:var(--pvb-accent)}
+.pvb-blog .pvb-more:disabled{opacity:.6;cursor:wait}
+.pvb-blog [hidden]{display:none!important}
+.pvb-blog a:focus-visible,.pvb-blog button:focus-visible,.pvb-blog .pvb-title:focus{outline:2px solid var(--pvb-accent);outline-offset:5px}
+.pvb-blog .pvb-status{margin:12px 0 0;font-size:.9rem}
+@media(max-width:900px){.pvb-blog .pvb-card{grid-template-columns:180px minmax(0,1fr);gap:22px}}
+@media(max-width:640px){.pvb-blog .pvb-card{grid-template-columns:minmax(0,1fr);gap:18px;padding:26px 0}.pvb-blog .pvb-image{aspect-ratio:16/9}.pvb-blog .pvb-title{font-size:1.4rem}.pvb-blog .pvb-more{width:100%}}
